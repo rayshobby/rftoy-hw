@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12576,9 +12576,9 @@ www.irf.com&lt;p&gt;
 <junction x="91.44" y="13.97"/>
 <pinref part="S3" gate="S" pin="4"/>
 <junction x="91.44" y="11.43"/>
-<wire x1="91.44" y1="31.75" x2="91.44" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="S1" gate="S" pin="3"/>
 <pinref part="S1" gate="S" pin="4"/>
+<wire x1="91.44" y1="31.75" x2="91.44" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="29.21" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
 <junction x="91.44" y="29.21"/>
 <junction x="91.44" y="22.86"/>
@@ -12841,19 +12841,6 @@ www.irf.com&lt;p&gt;
 <label x="82.55" y="120.65" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D4" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
-<label x="66.04" y="29.21" size="1.778" layer="95"/>
-<wire x1="62.23" y1="29.21" x2="78.74" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="29.21" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="22.86" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="S2" gate="S" pin="1"/>
-<pinref part="S2" gate="S" pin="2"/>
-<wire x1="78.74" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
-<junction x="81.28" y="22.86"/>
-</segment>
-</net>
 <net name="D8" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
@@ -12867,17 +12854,6 @@ www.irf.com&lt;p&gt;
 <wire x1="106.68" y1="26.67" x2="101.6" y2="26.67" width="0.1524" layer="91"/>
 <junction x="106.68" y="26.67"/>
 <label x="101.6" y="24.13" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
-<label x="66.04" y="31.75" size="1.778" layer="95"/>
-<pinref part="S1" gate="S" pin="1"/>
-<wire x1="81.28" y1="31.75" x2="81.28" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="S1" gate="S" pin="2"/>
-<wire x1="62.23" y1="31.75" x2="81.28" y2="31.75" width="0.1524" layer="91"/>
-<junction x="81.28" y="31.75"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -13218,13 +13194,14 @@ www.irf.com&lt;p&gt;
 <net name="D5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
-<wire x1="62.23" y1="26.67" x2="69.85" y2="26.67" width="0.1524" layer="91"/>
 <label x="66.04" y="26.67" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="44.45" x2="83.82" y2="44.45" width="0.1524" layer="91"/>
-<label x="87.63" y="44.45" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="15"/>
+<wire x1="81.28" y1="22.86" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="S2" gate="S" pin="1"/>
+<pinref part="S2" gate="S" pin="2"/>
+<wire x1="78.74" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
+<junction x="81.28" y="22.86"/>
+<wire x1="62.23" y1="26.67" x2="78.74" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="26.67" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
@@ -13232,6 +13209,29 @@ www.irf.com&lt;p&gt;
 <pinref part="JP5" gate="A" pin="8"/>
 <wire x1="100.33" y1="115.57" x2="110.49" y2="115.57" width="0.1524" layer="91"/>
 <label x="105.41" y="115.57" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
+<label x="66.04" y="29.21" size="1.778" layer="95"/>
+<pinref part="S1" gate="S" pin="1"/>
+<pinref part="S1" gate="S" pin="2"/>
+<wire x1="81.28" y1="31.75" x2="81.28" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="29.21" x2="81.28" y2="29.21" width="0.1524" layer="91"/>
+<junction x="81.28" y="29.21"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="62.23" y1="31.75" x2="69.85" y2="31.75" width="0.1524" layer="91"/>
+<label x="66.04" y="31.75" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="96.52" y1="44.45" x2="83.82" y2="44.45" width="0.1524" layer="91"/>
+<label x="87.63" y="44.45" size="1.778" layer="95"/>
+<pinref part="JP6" gate="A" pin="15"/>
 </segment>
 </net>
 </nets>
